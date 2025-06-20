@@ -11,6 +11,9 @@
 ## 🧠 Project Overview
 
 This project introduces a **Behavioral Emotion Monitoring System** designed to track employee emotions in real time using facial expression analysis. It leverages deep learning, computer vision, and GUI technologies to assist HR departments in monitoring workplace well-being and productivity.
+![image](https://github.com/user-attachments/assets/7d72ac10-bf80-4d93-9126-9051aa9b5fd3)
+![image](https://github.com/user-attachments/assets/a47e9f54-a9e2-40b3-a87f-4d717fc947e4)
+![image](https://github.com/user-attachments/assets/f2c5638b-f21e-46d1-ade6-f8f102dccb2d)
 
 ## 🎯 Objectives
 
