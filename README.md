@@ -1,36 +1,33 @@
----
+Behavioral Emotion Monitoring System
+Project by: Gurucharan Raj K, Harish R, Balaji P, Aswin C
+Department: AI & Data Science, St. Joseph’s Institute of Technology
+Presentation Date: April 2025
 
-# Behavioral Emotion Monitoring System
+🧠 Project Overview
+This project introduces a Behavioral Emotion Monitoring System designed to track employee emotions in real time using facial expression analysis. It leverages deep learning, computer vision, and GUI technologies to assist HR departments in monitoring workplace well-being and productivity.
 
-> **Project by:** Gurucharan Raj K, Harish R, Balaji P, Aswin C
-> **Department:** AI & Data Science, St. Joseph’s Institute of Technology
-> **Presentation Date:** April 2025
+🎯 Objectives
+Detect and classify emotions: 😄 Happy, 😐 Neutral, 😢 Sad, 😠 Angry (with extended support for 😲 Surprised, 😨 Fearful, 🤢 Disgusted).
 
-## 🧠 Project Overview
+Record emotional state with a timestamp every 30 minutes in CSV format.
 
-This project introduces a **Behavioral Emotion Monitoring System** designed to track employee emotions in real time using facial expression analysis. It leverages deep learning, computer vision, and GUI technologies to assist HR departments in monitoring workplace well-being and productivity.
+Provide daily/monthly visual reports (graphs, charts, and PDF summaries).
 
-## 🎯 Objectives
+Offer a user-friendly GUI using Tkinter for non-technical users.
 
-* Detect and classify emotions: 😄 Happy, 😐 Neutral, 😢 Sad, 😠 Angry (with extended support for 😲 Surprised, 😨 Fearful, 🤢 Disgusted).
-* Record emotional state with a timestamp every **30 minutes** in CSV format.
-* Provide **daily/monthly visual reports** (graphs, charts, and PDF summaries).
-* Offer a **user-friendly GUI** using Tkinter for non-technical users.
+🧪 Technologies Used
+Technology	Role
+Python	Core Programming Language
+OpenCV	Real-time Face Detection
+TensorFlow/Keras	CNN-based Emotion Classification
+Tkinter	Graphical User Interface (GUI)
+Pandas & Matplotlib	Data Logging & Visualization
+ReportLab	PDF Report Generation
 
-## 🧪 Technologies Used
-
-| Technology          | Role                             |
-| ------------------- | -------------------------------- |
-| Python              | Core Programming Language        |
-| OpenCV              | Real-time Face Detection         |
-| TensorFlow/Keras    | CNN-based Emotion Classification |
-| Tkinter             | Graphical User Interface (GUI)   |
-| Pandas & Matplotlib | Data Logging & Visualization     |
-| ReportLab           | PDF Report Generation            |
-
-## 📁 Project Structure
-
-```
+📁 Project Structure
+graphql
+Copy
+Edit
 .
 ├── Classification.py          # Real-time emotion detection with CSV logging
 ├── Model_Training.py          # CNN model definition and webcam-based prediction
@@ -40,71 +37,75 @@ This project introduces a **Behavioral Emotion Monitoring System** designed to t
 ├── emotion_model.h5           # Pre-trained CNN model weights
 ├── emojis/                    # Emoji icons for emotion visualization
 └── README.md                  # Project documentation
-```
+🚀 How It Works
+Face Detection: Captures webcam feed and uses Haar Cascades to locate faces.
 
-## 🚀 How It Works
+Emotion Classification: CNN model predicts emotion from cropped facial regions.
 
-1. **Face Detection:** Captures webcam feed and uses Haar Cascades to locate faces.
-2. **Emotion Classification:** CNN model predicts emotion from cropped facial regions.
-3. **Logging:** Saves emotion and timestamp to a CSV every 30 minutes.
-4. **Visualization:** Bar/line/pie charts generated from logs.
-5. **PDF Reports:** Automatically generated from collected CSVs summarizing emotional trends.
+Logging: Saves emotion and timestamp to a CSV every 30 minutes.
 
-## 📷 Sample Output
+Visualization: Bar/line/pie charts generated from logs.
 
-* Real-time webcam feed with detected emotion label.
-* Emoji displayed alongside actual camera input.
-* CSV file with columns: `Timestamp, Emotion, Angry, Disgusted, Fearful, Happy, Neutral, Sad, Surprised`
-* PDF report including:
+PDF Reports: Automatically generated from collected CSVs summarizing emotional trends.
 
-  * Summary statistics
-  * Emotion distribution pie chart
-  * Confidence over time graph
-  * Table of last 10 detected emotions
+📷 Sample Output
+Real-time webcam feed with detected emotion label.
 
-## 📊 Example CSV Row
+Emoji displayed alongside actual camera input.
 
-```
+CSV file with columns: Timestamp, Emotion, Angry, Disgusted, Fearful, Happy, Neutral, Sad, Surprised
+
+PDF report including:
+
+Summary statistics
+
+Emotion distribution pie chart
+
+Confidence over time graph
+
+Table of last 10 detected emotions
+
+📊 Example CSV Row
+yaml
+Copy
+Edit
 2025-06-20 10:30:00, Happy, 0.01, 0.00, 0.00, 0.95, 0.02, 0.01, 0.01
-```
+✅ Results
+90% accuracy for trained categories.
 
-## ✅ Results
+Real-time performance on standard laptops.
 
-* > 90% accuracy for trained categories.
-* Real-time performance on standard laptops.
-* Positive feedback from test users.
-* Scalable for future cloud deployment.
+Positive feedback from test users.
 
-## 🔐 Limitations
+Scalable for future cloud deployment.
 
-* Requires good lighting conditions.
-* Limited to facial expression-based emotion recognition.
-* Currently supports only 7 emotion classes.
+🔐 Limitations
+Requires good lighting conditions.
 
-## 🌟 Future Enhancements
+Limited to facial expression-based emotion recognition.
 
-* Integration with Slack/MS Teams for emotion-aware notifications.
-* Expand to recognize additional emotions and multimodal inputs (voice, gestures).
-* Cloud dashboard for team-wide analytics.
+Currently supports only 7 emotion classes.
 
-## 🛠️ How to Run
+🌟 Future Enhancements
+Integration with Slack/MS Teams for emotion-aware notifications.
 
-1. Ensure Python 3.x and required libraries are installed.
-2. Place `emotion_model.h5` and emoji images in correct folders.
-3. Run `Classification.py` for real-time emotion tracking.
-4. Use `PDF_Generator.py` to generate monthly reports from `emotion_data/`.
+Expand to recognize additional emotions and multimodal inputs (voice, gestures).
 
-## 📦 Requirements
+Cloud dashboard for team-wide analytics.
 
-```bash
+🛠️ How to Run
+Ensure Python 3.x and required libraries are installed.
+
+Place emotion_model.h5 and emoji images in correct folders.
+
+Run Classification.py for real-time emotion tracking.
+
+Use PDF_Generator.py to generate monthly reports from emotion_data/.
+
+📦 Requirements
+bash
+Copy
+Edit
 pip install opencv-python keras numpy pandas matplotlib reportlab pillow pytz
-```
-
----
-
-## 🙏 Acknowledgements
-
+🙏 Acknowledgements
 We express our sincere gratitude to our faculty and peers for their guidance and support throughout this project. Special thanks to the Department of AI & Data Science, St. Joseph’s Institute of Technology.
-
----
-
