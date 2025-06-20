@@ -1,4 +1,4 @@
-Here is a complete and professional `README.md` file for your **Behavioral Emotion Monitoring System** project:
+
 
 ---
 
@@ -109,5 +109,3 @@ pip install opencv-python keras numpy pandas matplotlib reportlab pillow pytz
 We express our sincere gratitude to our faculty and peers for their guidance and support throughout this project. Special thanks to the Department of AI & Data Science, St. Joseph’s Institute of Technology.
 
 ---
-
-Let me know if you'd like this README in `.md` format or want to publish it on GitHub.
